@@ -13,7 +13,7 @@
     <int:channel id="outboundMailChannel"/>
 
     <mail:imap-idle-channel-adapter should-delete-messages="false"
-                                    store-uri="imaps://bartlomiej.gora.test:123Test123@imap.gmail.com:993/INBOX"
+                                    store-uri="imaps://bartlomiej.gora.test:@imap.gmail.com:993/INBOX"
                                     channel="inMailChannel"
                                     auto-startup="true"
                                     should-mark-messages-as-read="false"/>
