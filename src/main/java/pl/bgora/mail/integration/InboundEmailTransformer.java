@@ -12,7 +12,7 @@ public class InboundEmailTransformer extends AbstractMailMessageTransformer<Emai
 
     @Override
     protected AbstractIntegrationMessageBuilder<EmailData> doTransform(javax.mail.Message message) throws Exception {
-        EmailData data = new EmailData();
+        EmailData data = new EmailData(message.getSubject(), message.getFrom()[0].toString(), "");
         return MessageBuilder.withPayload(data);
     }
 }
