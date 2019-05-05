@@ -31,7 +31,7 @@
     </util:properties>
 
     <mail:outbound-channel-adapter channel="outboundMailChannel" host="smtp.gmail.com"
-                                   username="bartlomiej.gora.test@gmail.com"
+                                   username="[login]@gmail.com"
                                    password="" java-mail-properties="gmailProperties" port="587"/>
 
 
